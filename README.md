@@ -4,10 +4,10 @@
 
 ### 拓扑设置
     请查看topo.py文件，有基本的设置，最初的拓扑如下(使用packet tracer画的)
-    ![topo](./topo.png)
+![image](https://github.com/ruchuer/network_base/blob/main/topo.png)
 
     接口和ip的设置查看topo_build.py文件，有关veth-pair的创建等等
 
 ### 运行
     在当前目录下，在终端执行“sudo python3 ./cli.py”，显示如下：
-    ![cli](./cli.png)
+![image](https://github.com/ruchuer/network_base/blob/main/cli.png)
