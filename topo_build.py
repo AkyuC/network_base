@@ -126,10 +126,10 @@ if __name__ == '__main__' :
 
     # 创建容器
     for rt_no in range(tp.rt_num):
-        os.system("sudo docker create -it --name=R{no} --net=none --privileged -v /etc/localtime:/etc/localtime:ro node /bin/bash > /dev/null;\
+        os.system("sudo docker create -it --name=R{no} --net=none --privileged -v /etc/localtime:/etc/localtime:ro ruchuer/u20_quagga:latest /bin/bash > /dev/null;\
             sudo docker start R{no} > /dev/null;".format(no=rt_no+1))
     for host_no in tp.host:
-        os.system("sudo docker create -it --name=h{no} --net=none --privileged -v /etc/localtime:/etc/localtime:ro node /bin/bash > /dev/null;\
+        os.system("sudo docker create -it --name=h{no} --net=none --privileged -v /etc/localtime:/etc/localtime:ro ruchuer/u20_quagga:latest /bin/bash > /dev/null;\
             sudo docker start h{no} > /dev/null;".format(no=host_no))
 
     # 链路添加到对应的容器当中
