@@ -94,9 +94,6 @@ def gen_config_rt(node, filename, tp: topo):
             file.write("tn.write(\"config t\\n\".encode('ascii'))\n")               # 进入配置模式
 
             file.write("tn.read_until(\"# \".encode('ascii'))\n")
-            file.write("tn.write(\"router rip\\n\".encode('ascii'))\n")             # 进入rip
-
-            file.write("tn.read_until(\"# \".encode('ascii'))\n")
             file.write("tn.write(\"router ospf\\n\".encode('ascii'))\n")            # 进入ospf
 
             for node_adj in tp.tp[node]:
