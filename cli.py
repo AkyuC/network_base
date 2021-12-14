@@ -15,7 +15,7 @@ class cli:
             try:
                 print("\n>-- Available commands:\n"
                     ">-- 1.run topo\n"
-                    ">-- 2.ping test, example： 2 1 7 mean h1 ping -c 5 h7\n"
+                    ">-- 2.ping test, example: 2 1 7 mean h1 ping -c 3 h7\n"
                     ">-- 3.stop all and exit\n"
                     )
 
@@ -38,7 +38,7 @@ class cli:
                     if(len(command) != 3):
                         print(">-- 请正确输入！\n")
                     else:
-                        os.system("sudo docker exec -it h{} ping -c 5 154.0.{}.2".format(int(command[1]), int(command[2])))
+                        os.system("sudo docker exec -it h{} ping -c 3 154.0.{}.2".format(int(command[1]), int(command[2])))
 
                 if(int(command[0]) == 3):
                     if(self.is_bulid):

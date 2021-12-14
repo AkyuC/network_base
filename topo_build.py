@@ -119,6 +119,7 @@ def gen_config_rt(node, filename, tp: topo):
 
 
 if __name__ == '__main__' :
+    # 创建topo类对象，获取拓扑信息
     tp = topo()
 
     # 创建容器
