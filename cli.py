@@ -15,7 +15,7 @@ class cli:
             try:
                 print("\n>-- Available commands:\n"
                     ">-- 1.run topo\n"
-                    ">-- 2.ping test, host(1,2,6,7),example： 2 1 7 mean h1 ping -c 5 h7\n"
+                    ">-- 2.ping test, example： 2 1 7 mean h1 ping -c 5 h7\n"
                     ">-- 3.stop all and exit\n"
                     )
 

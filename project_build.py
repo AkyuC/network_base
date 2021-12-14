@@ -3,7 +3,7 @@ import os
 
 if __name__ == '__main__' :
     # 安装docker
-    os.system("sudo curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun")
+    os.system("sudo apt install curl -y; sudo curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun")
 
     # 拉取镜像
     os.system("sudo docker pull ruchuer/u20_quagga")
@@ -11,7 +11,7 @@ if __name__ == '__main__' :
     # 我把自己的镜像上传到了docker hub，可以直接拉取，所以下面的自建docker镜像可以参考参考
 
     # # 运行一个容器，用于配置
-    # os.system("sudo docker create -it --name=R{no} --privileged -v /etc/localtime:/etc/localtime:ro ubuntu:18.04 /bin/bash > /dev/null;\
+    # os.system("sudo docker create -it --name=R{no} --privileged -v /etc/localtime:/etc/localtime:ro ubuntu:20.04 /bin/bash > /dev/null;\
     #         sudo docker start R{no} > /dev/null;".format(no=1))
 
     # # 运行配置
