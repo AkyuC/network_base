@@ -11,5 +11,3 @@
 ### 运行
 在当前目录下，在终端执行“sudo python3 ./cli.py”，显示如下：
 ![image](https://github.com/ruchuer/network_base/blob/main/cli.png)
-
-![](http://latex.codecogs.com/svg.latex?\int_2)
